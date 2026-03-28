@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quick Reminders</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Quick Reminders</h1>
+      <button id="clearAll" title="Clear all">✖</button>
+    </header>
+
+    <form id="taskForm">
+      <input id="title" placeholder="Title" required maxlength="100" />
+      <textarea id="details" placeholder="Details (optional)" rows="2" maxlength="500"></textarea>
+      <div class="row">
+        <input id="due" type="datetime-local" />
+        <button type="submit" id="addBtn">Add</button>
+      </div>
+    </form>
+
+    <ul id="tasks"></ul>
+
+    <footer>
+      <small>Built with smooth animations</small>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
